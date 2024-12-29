@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderRank - Learn Coding Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1><i class="ri-gemini-line"></i> CoderRank</h1>
+            <div class="user-greeting" id="userGreeting"></div>
+        </div>
+        <div class="nav-links">
+            <h4 onclick="loadpage('home')">Home</h4>
+            <h4 onclick="loadpage('courses')">Courses</h4>
+            <h4 onclick="loadpage('practice')">Practice</h4>
+            <h4 onclick="loadpage('services')">Services</h4>
+            <h4 onclick="loadpage('about')">About</h4>
+            <button onclick="openAuthModal()">Login / Signup</button>
+        </div>
+    </nav>
+
+    <div id="home-content" class="content active-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Transform Your Coding Journey</h1>
+                <p>Unlock your potential with personalized learning paths, real-world projects, and expert guidance</p>
+                <a href="#" class="btn">Start Learning Today </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3>50K+</h3>
+                    <p>Learners Worldwide</p>
+                </div>
+                <div class="stat-card">
+                    <h3>200+</h3>
+                    <p>Expert-Led Courses</p>
+                </div>
+                <div class="stat-card">
+                    <h3>95%</h3>
+                    <p>Career Success Rate</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-paths">
+            <h2>Discover Your Learning Path</h2>
+            <div class="path-grid">
+                <div class="path-card">
+                    <i class="ri-code-s-slash-line"></i>
+                    <h3>Beginner</h3>
+                    <p>Start your coding journey with foundational skills</p>
+                    <ul>
+                        <li>HTML & CSS Basics</li>
+                        <li>JavaScript Fundamentals</li>
+                        <li>Problem-Solving Techniques</li>
+                    </ul>
+                    <a href="#" class="btn">Explore Path</a>
+                </div>
+                <div class="path-card">
+                    <i class="ri-laptop-line"></i>
+                    <h3>Intermediate</h3>
+                    <p>Level up with advanced programming concepts</p>
+                    <ul>
+                        <li>Advanced JavaScript</li>
+                        <li>React & Modern Frameworks</li>
+                        <li>Backend Development</li>
+                    </ul>
+                    <a href="#" class="btn">Explore Path</a>
+                </div>
+                <div class="path-card">
+                    <i class="ri-rocket-line"></i>
+                    <h3>Advanced</h3>
+                    <p>Master complex technologies and architecture</p>
+                    <ul>
+                        <li>Microservices</li>
+                        <li>Cloud Computing</li>
+                        <li>Machine Learning Basics</li>
+                    </ul>
+                    <a href="#" class="btn">Explore Path</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Why Choose CoderRank?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="ri-video-line"></i>
+                    <h3>Interactive Learning</h3>
+                    <p>Engage with hands-on coding challenges and real-world projects</p>
+                </div>
+                <div class="feature-card">
+                    <i class="ri-pantone-line"></i>
+                    <h3>Personalized Curriculum</h3>
+                    <p>Adaptive learning paths tailored to your skill level and goals</p>
+                </div>
+                <div class="feature-card">
+                    <i class="ri-team-line"></i>
+                    <h3>Expert Mentorship</h3>
+                    <p>Learn directly from industry professionals and experienced developers</p>
+                </div>
+                <div class="feature-card">
+                    <i class="ri-award-line"></i>
+                    <h3>Career Support</h3>
+                    <p>Job placement assistance and interview preparation resources</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="cta">
+            <h2>Ready to Start Your Coding Adventure?</h2>
+            <p>Join thousands of learners transforming their careers through technology</p>
+            <a href="#" class="btn btn-large">Enroll Now</a>
+        </section>
+    </div>
+
+    <div id="courses-content" class="content">
+        <h2>Programming Courses</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <i class="ri-javascript-line"></i>
+                <h3>JavaScript Mastery</h3>
+                <p>From basics to advanced techniques</p>
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <i class="ri-react-line"></i>
+                <h3>React Development</h3>
+                <p>Build modern web applications</p>
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <i class="ri-python-line"></i>
+                <h3>Python Programming</h3>
+                <p>Learn Python from scratch</p>
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <i class="ri-code-s-slash-line"></i>
+                <h3>Data Structures</h3>
+                <p>Master algorithms and data structures</p>
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <i class="ri-database-2-line"></i>
+                <h3>SQL Fundamentals</h3>
+                <p>Database management and querying</p>
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <i class="ri-nodejs-line"></i>
+                <h3>Node.js Backend</h3>
+                <p>Server-side JavaScript development</p>
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="practice-content" class="content">
+        <h2>Coding Practice Arena</h2>
+        <div class="practice-categories">
+            <div class="practice-card">
+                <i class="ri-code-box-line"></i>
+                <h3>Easy Challenges</h3>
+                <p>Perfect for beginners</p>
+                <a href="#" class="btn">Start Practicing</a>
+            </div>
+            <div class="practice-card">
+                <i class="ri-medal-line"></i>
+                <h3>Medium Challenges</h3>
+                <p>Test your skills</p>
+                <a href="#" class="btn">Start Practicing</a>
+            </div>
+            <div class="practice-card">
+                <i class="ri-rocket-line"></i>
+                <h3>Hard Challenges</h3>
+                <p>Advanced problem solving</p>
+                <a href="#" class="btn">Start Practicing</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="services-content" class="content">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="ri-video-line"></i>
+                <h3>Live Coding Sessions</h3>
+                <p>Interactive learning with expert instructors</p>
+                <a href="#" class="btn">Book a Session</a>
+            </div>
+            <div class="service-card">
+                <i class="ri-pantone-line"></i>
+                <h3>Personalized Mentorship</h3>
+                <p>One-on-one guidance from industry professionals</p>
+                <a href="#" class="btn">Find a Mentor</a>
+            </div>
+            <div class="service-card">
+                <i class="ri-team-line"></i>
+                <h3>Interview Preparation</h3>
+                <p>Mock interviews and technical prep</p>
+                <a href="#" class="btn">Prepare Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-content" class="content">
+        <h2>About CoderRank</h2>
+        <div class="about-content">
+            <div class="mission-section">
+                <h3>Our Mission</h3>
+                <p>CoderRank is dedicated to transforming coding education through interactive, personalized learning
+                    experiences. We believe in empowering developers at every stage of their journey.</p>
+            </div>
+            <div class="team-section">
+                <h3>Our Team</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="c-solid.svg" alt="Team Member" />
+                        <h4>Vishal Gaurav</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAuthModal()">&times;</span>
+            <h2>Login / Signup</h2>
+            <form id="authForm" onsubmit="handleLoginSignup(event)">
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <input type="text" id="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CoderRank. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
